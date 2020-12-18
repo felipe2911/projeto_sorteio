@@ -4,56 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sorteio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/estilo.css">
-    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+
     
  
 </head>
 <body>
 
-    <header id="top-page" class="d-flex flex-row ">
+    <header id="top-page" class="d-flex flex-row justify-content-between">
         <h1 id="title">Sorteio Online</h1>
-        <nav class="navbar ml-auto" >
-            <ul class="navbar-nav flex-row">
-                <li class="nav-item mr-2"><a href=""  class="nav-link">Facebook</a></li>
-                <li class="nav-item mr-2"><a href=""  class="nav-link">Instagram</a></li>
-                <li class="nav-item mr-2"><a href=""  class="nav-link">Twitter</a></li>
+        <nav class="navbar" >
+            <ul class="navbar-nav">
+                <li class="nav nav-item mr-2 "><a href="#"  class="nav-link disabled">Escolha a quantidade!</a></li>
+
             </ul>
         </nav>
 
     </header>
 
     <div class=" row justify-content-center align-self-cen" id="div-result">
-        <h3>Os números sorteados são:</h3>
-        <form >
-        <div class="form-group row justify-content-around">
-            <input type="text" name="" id="caixa1" disabled="disabled">
-            <input type="text" name="" id="caixa2" disabled="disabled">
-            <input type="text" name="" id="caixa3" disabled="disabled">
-            <input type="text" name="" id="caixa4" disabled="disabled">
-        </div>
-        </form>
-        <form >
-        <div class="form-group row justify-content-around">
-            <input type="text" name="" id="caixa5" disabled="disabled" >
-            <input type="text" name="" id="caixa6" disabled="disabled">
-            <input type="text" name="" id="caixa7" disabled="disabled">
-            <input type="text" name="" id="caixa8" disabled="disabled" >
-        </div>
-        </form>
+        <h4 class="mr-5 ml-5" id="texto">Olá caro usúario, bem vindo ao site sorteio online!</h4>
 
-        <div class="d-flex flex-column" id="informe">
-            <p>Informe um número de 10 até 1000:
-                <input type="number" name="" id="numeroInformado"> </p>
-            <button class="text-white text-uppercase" onclick="sortearNumeros()">Sortear</button>
+        <div>
+            <p id="detalhes">Para continuar escolha a quantidade de números a serem sorteados!</p>
         </div>
+
+        <div class="row justify-content-center">
+            
+            <select class="col-8" id="qtdSorteio">
+                <option value="">Selecione um número!</option>
+                <option  value="1">1 número </option>
+                <option  value="2">2 números </option>
+                <option  value="3">3 números </option>
+                <option  value="4">4 números </option>
+                <option  value="5">5 números </option>
+                <option  value="6">6 números </option>
+                <option  value="7">7 números </option>
+                <option  value="8">8 números </option>
+                <option   value="9">9 números </option>
+                <option  value="10">10 números </option>
+            </select>
+            <div class=" col-4" id="informe">
+                <button class="text-white text-uppercase" onclick="selecionandoQtd()">Selecionar</button>
+            </div>
+        </div>
+        
+
+        <footer>
+            <div class="d-flex justify-content-around">
+                <a href=""><i class="fab fa-facebook-square"></i>              
+                </a>
+                <a href=""><i class="fab fa-instagram "></i></a>
+                <a href=""><i class="fab fa-google-play "></i></a>           
+            </div>
+
+            <div >
+                <p class="rodape-texto">Desenvolvido por: Felipe Carvalho</p>
+                <p class="rodape-texto"> Copyright&copy;</p>
+            </div>
+ 
+        </footer>
        
     </div>
     <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/7abd1c822d.js" crossorigin="anonymous"></script>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 
 </body>
 </html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/sorteio.css">
+    
+ 
+</head>
+<body>
+
+    <header id="top-page" class="d-flex flex-row justify-content-between">
+        <h1 id="title">Sorteio Online</h1>
+        <nav class="navbar" >
+            <ul class="navbar-nav flex-row">
+                <li class="nav-item mr-2"><a href="index.html"  class="nav-link">Escolha a quantidade!</a></li>
+
+            </ul>
+        </nav>
+
+    </header>
+
+    <div class=" row justify-content-center align-self-cen" id="div-result">
+        <h3>Os números sorteados são:</h3>
+        <form>
+        <div class="form-group row justify-content-around " id="pos-Resultado" >
+            <input type="text" name="" id="caixa1" disabled="disabled">
+            <input type="text" name="" id="caixa2" disabled="disabled">
+            <input type="text" name="" id="caixa3" disabled="disabled">
+            <input type="text" name="" id="caixa4" disabled="disabled">           
+            <input type="text" name="" id="caixa5" disabled="disabled" >
+            <input type="text" name="" id="caixa6" disabled="disabled">
+            <input type="text" name="" id="caixa7" disabled="disabled">
+            <input type="text" name="" id="caixa8" disabled="disabled" >
+            <input type="text" name="" id="caixa9" disabled="disabled" >
+            <input type="text" name="" id="caixa10" disabled="disabled" >
+        </div>
+        </form>
+
+        <div class="d-flex flex-column" id="informe">
+            <p>Informe um número de 20 até 1000:
+                <input type="number" name="" id="numeroInformado"> </p>
+            <button class="text-white text-uppercase" onclick="sortearNumeros()">Sortear</button>
+        </div>
+       
+    </div>
+    <script src="js/sorteio.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+</body>
+</html>

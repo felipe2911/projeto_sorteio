@@ -1,0 +1,95 @@
+body {
+     background-color: #E0FFFF !important;
+}
+
+#top-page {
+    background: #48D1CC;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    padding: 0px 10px;
+    box-shadow: 0px 2px 10px;
+}
+#title{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    font-style: italic;
+    text-shadow: 1px 1px 2px;
+    margin: 2px 2px 2px 10px;
+}
+
+
+li a {
+    color: #ffffff;
+    text-transform: none;
+}
+
+li a:hover {
+    color: #828282;
+}
+
+
+#div-result {
+    width: 500px;
+    height: 500px;
+    margin:  100px auto 0px auto;
+    background: #48D1CC;
+    box-shadow: 0px 0px 15px #000000;
+    padding: 1% 2%;
+    border-radius: 5%;
+
+}
+
+#div-result h3 {
+    color: #ffffff;
+    text-shadow: 1px 1px 2px #000000;
+    text-transform: uppercase;
+    margin: 5px auto 0px auto;
+}
+
+
+
+.form-group input {
+    width: 35%;
+    margin-top: 35px;
+    background: #48D1CC;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px #000000;
+    border: 1px solid #828282;
+
+}
+.form-group input:hover {
+    background-color: #00CED1;
+}
+#informe {
+    color: white;
+    text-shadow: 1px 1px 2px #000000;
+    font-size: 15px;
+}
+#informe input {
+    background: #48D1CC;
+    border: 1px solid #828282;
+    color: white;
+    text-shadow: 1px 1px 2px #000000;
+}
+
+
+#informe input:focus {
+    outline: none;
+    background-color: #00CED1 ;
+}
+button {
+    background-color: #48D1CC;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px #000000;
+    border: 1px solid #828282;
+}
+
+button:hover {
+    background-color: #00CED1 ;
+}
+
+button:focus {
+    outline: none;
+}
